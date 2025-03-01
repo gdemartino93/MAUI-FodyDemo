@@ -11,6 +11,7 @@ namespace MAUI_FodyDemo
 {
     public class MainPageViewModel : INotifyPropertyChanged
     {
+        // implementing manually INotifyPropertyChanged
         private int firstNumber;
         private int secondNumber;
         private int result;

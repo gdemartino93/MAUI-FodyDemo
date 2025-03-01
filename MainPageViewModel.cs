@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PropertyChanged;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -9,6 +10,7 @@ using System.Windows.Input;
 
 namespace MAUI_FodyDemo
 {
+    [AddINotifyPropertyChangedInterface]
     public class MainPageViewModel
     {
         // implementing manually INotifyPropertyChanged

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_FodyDemo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center"
+                             Padding="30,0"
+                             Spacing="10">
+            <Label Text="Primo numero:"/>
+            <Entry Placeholder="Number 1"
+                   Text="{Binding FirstNumber}" />
+
+            <Label Text="Secondo numero:"/>
+            <Entry Placeholder="Number 2"
+                   Text="{Binding SecondNumber}" />
+
+            <Label Text="Risultato:"/>
+            <Entry Placeholder="Result"
+                   Text="{Binding Result}" />
+
+            <Button Command="{Binding AddCommand}"
+                    Text="Calcola"
+                    WidthRequest="100"
+                    Margin="20"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
